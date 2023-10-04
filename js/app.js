@@ -64,7 +64,7 @@ function createRow(item){
 function btnDelItem(e){
     if(e.target.classList.contains('btn')){
         const id = e.target.getAttribute('data-id');
-        // Eliminar carrito
+        // Eliminar  el carrito
         carrito = carrito.filter(itemCarrito => itemCarrito.id !== id);
         showTable();
     }
